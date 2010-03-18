@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="6"
+   name=""
+   committed-date="2007-01-11T03:54:43.981719Z"
+   url="http://rw-xcode-templates.googlecode.com/svn/trunk/RapidWeaver%20Plugins/PHP%20Hello%20World%20Plugin/HelloWorld.xcodeproj"
+   last-author="tomfors"
+   kind="dir"
+   uuid="bbc13273-ef25-0410-bf72-996cafae8b4f"
+   revision="6"/>
+<entry
+   committed-rev="6"
+   name="TemplateInfo.plist"
+   text-time="2007-01-11T03:55:18.000000Z"
+   committed-date="2007-01-11T03:54:43.981719Z"
+   checksum="ff4c54cfb610e2014c29b5e143027de9"
+   last-author="tomfors"
+   kind="file"
+   prop-time="2007-01-11T03:55:17.000000Z"/>
+<entry
+   committed-rev="6"
+   name="project.pbxproj"
+   text-time="2007-01-11T03:55:18.000000Z"
+   committed-date="2007-01-11T03:54:43.981719Z"
+   checksum="94439ca5db71fe6ec212ba357a5d23d9"
+   last-author="tomfors"
+   kind="file"
+   prop-time="2007-01-11T03:55:18.000000Z"/>
+</wc-entries>

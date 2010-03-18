@@ -1,0 +1,204 @@
+//
+//  ÇPROJECTNAMEASIDENTIFIERÈPlugin.m
+//  ÇPROJECTNAMEÈ Plugin for RapidWeaver
+//
+//  Created by ÇFULLUSERNAMEÈ on ÇDATEÈ.
+//  Copyright ÇORGANIZATIONNAMEÈ ÇYEARÈ. All rights reserved.
+//
+
+#import "ÇPROJECTNAMEASIDENTIFIERÈPlugin.h"
+
+static NSBundle *pluginBundle = nil;
+
+@implementation ÇPROJECTNAMEASIDENTIFIERÈPlugin
+
+///////////////////////////////////////////////////////////////////
+//
+// ÇPROJECTNAMEÈ Plugin 
+//
+// These are the basic object life-cycle methods
+//
+///////////////////////////////////////////////////////////////////
+
+- (id)init
+{
+    if ((self = [super init]) != nil){
+		[NSBundle loadNibNamed:@"ÇPROJECTNAMEASIDENTIFIERÈ" owner:self];
+	}
+    return self;
+}
+
+- (void)dealloc
+{
+	[_textFieldValue release];
+	[super dealloc];
+}
+
+///////////////////////////////////////////////////////////////////
+//
+// Save and restore plugin settings
+//
+// This is where you can save and restore your plugin's data to 
+// and from the .rw3 file
+//
+///////////////////////////////////////////////////////////////////
+
+//Load Data
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [self init]) {
+		[self setTextFieldValue:[aDecoder decodeObject]];//Load the Text Field
+		[self setDisplayDate:[[aDecoder decodeObject] boolValue]]; //Load the displayDate flag
+    }
+    return self;
+}
+
+//Save Data
+- (void)encodeWithCoder:(NSCoder *)aCoder 
+{
+	[aCoder encodeObject:[self textFieldValue]]; //Save the Text Field
+	[aCoder encodeObject:[NSNumber numberWithBool:[self displayDate]]]; //Save the displayDate flag
+}
+
+
+///////////////////////////////////////////////////////////////////
+//
+// Plugin Output
+//
+// This is where you return your plugin's content to RapidWeaver. 
+// 
+// Note: These methods will probably be called on a thread other than
+// the main one so beware of calling APIs which are not background
+// thread safe e.g. AppleScript, some parts of QuickTime, etc
+//
+///////////////////////////////////////////////////////////////////
+
+- (id)contentHTML:(NSDictionary*)params
+{
+	id content = nil;
+	
+	NSBundle *bundle = [NSBundle bundleForClass:@"ÇPROJECTNAMEASIDENTIFIERÈPlugin"];
+	NSString *template = [bundle pathForResource:@"template" ofType:@"php"]; 
+	NSError *error;
+	content = [NSMutableString stringWithContentsOfFile:template encoding:NSUTF8StringEncoding error:&error];
+	
+	[content replaceOccurrencesOfString:@"$((message))" 
+							 withString:[self textFieldValue] 
+								options:NSLiteralSearch 
+								  range:NSMakeRange(0, [content length])];
+	
+	[content replaceOccurrencesOfString:@"$((printDate))" 
+							 withString:[self displayDate] ? @"1" : @"0"
+								options:NSLiteralSearch 
+								  range:NSMakeRange(0, [content length])];
+	
+	return content;
+	}
+
+- (NSString *)sidebarHTML:(NSDictionary*)params
+{
+	return nil;
+}
+
+- (NSArray *)extraFilesNeededInExportFolder:(NSDictionary*)params
+{
+	return nil;
+}
+
+//Our pages have to end in .php so we override the user choice by implementing this method
+- (NSString*)overrideFileExtension
+{
+	return @"php";
+}
+
+///////////////////////////////////////////////////////////////////
+//
+// Plugin boilerplate
+//
+// This is the basic machinery required of a plugin by RapidWeaver 
+// to supply information like the plugin's name and icon
+//
+///////////////////////////////////////////////////////////////////
+
++ (BOOL)initializeClass:(NSBundle *)theBundle
+{
+    if (!pluginBundle){
+		pluginBundle = [theBundle retain];
+	}
+    return (pluginBundle != nil);
+}
+
++ (NSEnumerator *)pluginsAvailable;
+{
+    id plugin;
+    if (plugin = [[ÇPROJECTNAMEASIDENTIFIERÈPlugin alloc] init]){
+        return [[NSArray arrayWithObject:[plugin autorelease]] objectEnumerator];
+	}
+    return nil;
+}
+
++ (NSString *)pluginName
+{
+	NSBundle *mainBundle = [NSBundle bundleForClass:[self class]];
+	return NSLocalizedStringFromTableInBundle(@"PluginName", nil, mainBundle, @"Localizable"); 
+}
+
++ (NSString *)pluginAuthor
+{
+	NSBundle *mainBundle = [NSBundle bundleForClass:[self class]];
+	return NSLocalizedStringFromTableInBundle(@"AuthorName", nil, mainBundle, @"Localizable");
+}
+
++ (NSImage *)pluginIcon
+{ 
+	return [[[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForImageResource:@"plugin_icon"]] autorelease]; 
+}
+
++ (NSString *)pluginDescription;
+{	
+	NSBundle *mainBundle = [NSBundle bundleForClass:[self class]];
+    return NSLocalizedStringFromTableInBundle(@"PluginDescription", nil, mainBundle, @"Localizable"); 
+}
+
+- (NSView *)userInteractionAndEditingView
+{ 
+	return ÇPROJECTNAMEASIDENTIFIERÈView; 
+}
+
+///////////////////////////////////////////////////////////////////
+//
+// Plugin bindings
+//
+// Here we handle the connection between our internal data and
+// the user interface. These bindings are defined in ÇPROJECTNAMEASIDENTIFIERÈ.nib
+//
+///////////////////////////////////////////////////////////////////
+
+- (BOOL)displayDate
+{
+	return _displayDate;
+}
+
+- (void)setDisplayDate:(BOOL)flag
+{
+	if (_displayDate != flag){
+		_displayDate = flag;
+		[self broadcastPluginChanged]; // this lets RapidWeaver know that a plugin's state has changed and needs saving
+	}
+}
+
+- (NSString*)textFieldValue
+{
+	return _textFieldValue;
+}
+
+- (void)setTextFieldValue:(NSString*)value
+{
+	if (_textFieldValue != value){
+		[_textFieldValue release];
+		_textFieldValue = [[NSString stringWithString:value] retain];
+		[self broadcastPluginChanged]; // this lets RapidWeaver know that a plugin's state has changed and needs saving
+	}
+}
+
+@end

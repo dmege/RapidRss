@@ -1,0 +1,1 @@
+ const unsigned char RapidRssVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:RapidRss  PROJECT:RapidRss-  DEVELOPER:dme  BUILT:" __DATE__  " " __TIME__ "" "\n"; const double RapidRssVersionNumber __attribute__ ((used)) = (double)0.;

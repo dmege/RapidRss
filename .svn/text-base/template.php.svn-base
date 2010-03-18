@@ -1,0 +1,8 @@
+<?php
+
+print "$((message)) ";
+if ( $((printDate)) ) {
+	print "It is " . date("Y-m-d");
+}
+
+?>

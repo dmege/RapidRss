@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>This project builds a Cocoa-based plugin for RapidWeaver.</string>
+	<key>FilesToMacroExpand</key>
+	<array>
+		<string>Info.plist</string>
+		<string>«PROJECTNAMEASIDENTIFIER»Plugin.h</string>
+		<string>«PROJECTNAMEASIDENTIFIER»Plugin.m</string>
+		<string>English.lproj/«PROJECTNAMEASIDENTIFIER».nib/keyedobjects.nib</string>
+		<string>English.lproj/«PROJECTNAMEASIDENTIFIER».nib/classes.nib</string>
+		<string>English.lproj/Localizable.strings</string>
+	</array>
+	<key>FilesToRename</key>
+	<dict>
+		<key>English.lproj/HelloWorld.nib</key>
+		<string>English.lproj/«PROJECTNAMEASIDENTIFIER».nib</string>
+		<key>HelloWorldPlugin.h</key>
+		<string>«PROJECTNAMEASIDENTIFIER»Plugin.h</string>
+		<key>HelloWorldPlugin.m</key>
+		<string>«PROJECTNAMEASIDENTIFIER»Plugin.m</string>
+	</dict>
+</dict>
+</plist>

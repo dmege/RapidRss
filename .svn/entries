@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="6"
+   name=""
+   committed-date="2007-01-11T03:54:43.981719Z"
+   url="http://rw-xcode-templates.googlecode.com/svn/trunk/RapidWeaver%20Plugins/PHP%20Hello%20World%20Plugin"
+   last-author="tomfors"
+   kind="dir"
+   uuid="bbc13273-ef25-0410-bf72-996cafae8b4f"
+   revision="6"/>
+<entry
+   committed-rev="6"
+   name="HelloWorldPlugin.h"
+   text-time="2007-01-11T03:55:18.000000Z"
+   committed-date="2007-01-11T03:54:43.981719Z"
+   checksum="d05bd61a575be082512239bb4742621a"
+   last-author="tomfors"
+   kind="file"
+   prop-time="2007-01-11T03:55:17.000000Z"/>
+<entry
+   committed-rev="6"
+   name="template.php"
+   text-time="2007-01-11T03:55:18.000000Z"
+   committed-date="2007-01-11T03:54:43.981719Z"
+   checksum="80282190ea6c2c1c8c7ca53dfc08adf0"
+   last-author="tomfors"
+   kind="file"
+   prop-time="2007-01-11T03:55:17.000000Z"/>
+<entry
+   committed-rev="6"
+   name="GetRWPluginSDK.makefile"
+   text-time="2007-01-11T03:55:18.000000Z"
+   committed-date="2007-01-11T03:54:43.981719Z"
+   checksum="a791ade44cab5b1482319ed662c6fcab"
+   last-author="tomfors"
+   kind="file"
+   prop-time="2007-01-11T03:55:17.000000Z"/>
+<entry
+   committed-rev="6"
+   name="HelloWorldPlugin.m"
+   text-time="2007-01-11T03:55:18.000000Z"
+   committed-date="2007-01-11T03:54:43.981719Z"
+   checksum="78d93443d3e4835cf4e9f953afe4cfe9"
+   last-author="tomfors"
+   kind="file"
+   prop-time="2007-01-11T03:55:17.000000Z"/>
+<entry
+   committed-rev="6"
+   name="Info.plist"
+   text-time="2007-01-11T03:55:18.000000Z"
+   committed-date="2007-01-11T03:54:43.981719Z"
+   checksum="36516ccdb81dfd670c661328ccae6c3c"
+   last-author="tomfors"
+   kind="file"
+   prop-time="2007-01-11T03:55:17.000000Z"/>
+<entry
+   name="HelloWorld.xcodeproj"
+   kind="dir"/>
+<entry
+   committed-rev="6"
+   name="plugin_icon.png"
+   text-time="2007-01-11T03:55:18.000000Z"
+   committed-date="2007-01-11T03:54:43.981719Z"
+   checksum="fc9fd849b60aae814dfb1c675b188702"
+   last-author="tomfors"
+   kind="file"
+   prop-time="2007-01-11T03:55:18.000000Z"/>
+<entry
+   name="English.lproj"
+   kind="dir"/>
+</wc-entries>

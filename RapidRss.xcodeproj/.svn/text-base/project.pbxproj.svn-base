@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22B32AF90B55CA120048F8EE /* template.php in Resources */ = {isa = PBXBuildFile; fileRef = 22B32AF80B55CA120048F8EE /* template.php */; };
+		3719837B0A2C4D160099DB2E /* RWPluginUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3719837A0A2C4D160099DB2E /* RWPluginUtilities.framework */; };
+		9C736B6B094C726A001443E6 /* «PROJECTNAMEASIDENTIFIER»Plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 86EC470A0681049D00EF9A10 /* «PROJECTNAMEASIDENTIFIER»Plugin.h */; };
+		9C736B6D094C726A001443E6 /* «PROJECTNAMEASIDENTIFIER».nib in Resources */ = {isa = PBXBuildFile; fileRef = 3771366E0917AC52009CB342 /* «PROJECTNAMEASIDENTIFIER».nib */; };
+		9C736B6F094C726A001443E6 /* plugin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 375392D4078C5E82008DAC0E /* plugin_icon.png */; };
+		9C736B71094C726A001443E6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3778116A0917CBE000E538D6 /* Localizable.strings */; };
+		9C736B73094C726A001443E6 /* «PROJECTNAMEASIDENTIFIER»Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EC470B0681049D00EF9A10 /* «PROJECTNAMEASIDENTIFIER»Plugin.m */; };
+		9C736B75094C726A001443E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EC48AB06813ED400EF9A10 /* Cocoa.framework */; };
+		9C736B85094C7280001443E6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C736B84094C7280001443E6 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22B32AF80B55CA120048F8EE /* template.php */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.php; path = template.php; sourceTree = "<group>"; };
+		3719837A0A2C4D160099DB2E /* RWPluginUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RWPluginUtilities.framework; sourceTree = SOURCE_ROOT; };
+		375392D4078C5E82008DAC0E /* plugin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugin_icon.png; sourceTree = "<group>"; };
+		377811660917CBDB00E538D6 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		86EC470A0681049D00EF9A10 /* «PROJECTNAMEASIDENTIFIER»Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "«PROJECTNAMEASIDENTIFIER»Plugin.h"; sourceTree = "<group>"; };
+		86EC470B0681049D00EF9A10 /* «PROJECTNAMEASIDENTIFIER»Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "«PROJECTNAMEASIDENTIFIER»Plugin.m"; sourceTree = "<group>"; };
+		86EC478E06811B8300EF9A10 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = "English.lproj/«PROJECTNAMEASIDENTIFIER».nib"; sourceTree = "<group>"; };
+		86EC48AB06813ED400EF9A10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		9C736B80094C726A001443E6 /* «PROJECTNAMEASIDENTIFIER».rwplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "«PROJECTNAMEASIDENTIFIER».rwplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C736B84094C7280001443E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C736B74094C726A001443E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C736B75094C726A001443E6 /* Cocoa.framework in Frameworks */,
+				3719837B0A2C4D160099DB2E /* RWPluginUtilities.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86EC46E80681018500EF9A10 = {
+			isa = PBXGroup;
+			children = (
+				86EC470A0681049D00EF9A10 /* «PROJECTNAMEASIDENTIFIER»Plugin.h */,
+				86EC470B0681049D00EF9A10 /* «PROJECTNAMEASIDENTIFIER»Plugin.m */,
+				86EC483306812DE600EF9A10 /* Resources */,
+				86EC48B406813EDD00EF9A10 /* Frameworks */,
+				86EC479A06811BCE00EF9A10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86EC479A06811BCE00EF9A10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C736B80094C726A001443E6 /* «PROJECTNAMEASIDENTIFIER».rwplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86EC483306812DE600EF9A10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22B32AF80B55CA120048F8EE /* template.php */,
+				9C736B84094C7280001443E6 /* Info.plist */,
+				375392D4078C5E82008DAC0E /* plugin_icon.png */,
+				3771366E0917AC52009CB342 /* «PROJECTNAMEASIDENTIFIER».nib */,
+				3778116A0917CBE000E538D6 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		86EC48B406813EDD00EF9A10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3719837A0A2C4D160099DB2E /* RWPluginUtilities.framework */,
+				86EC48AB06813ED400EF9A10 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9C736B6A094C726A001443E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C736B6B094C726A001443E6 /* «PROJECTNAMEASIDENTIFIER»Plugin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9C736B69094C726A001443E6 /* «PROJECTNAMEASIDENTIFIER» */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C736B7B094C726A001443E6 /* Build configuration list for PBXNativeTarget "«PROJECTNAMEASIDENTIFIER»" */;
+			buildPhases = (
+				22B32ABC0B55C69E0048F8EE /* ShellScript */,
+				9C736B6A094C726A001443E6 /* Headers */,
+				9C736B6C094C726A001443E6 /* Resources */,
+				9C736B72094C726A001443E6 /* Sources */,
+				9C736B74094C726A001443E6 /* Frameworks */,
+				9C736B79094C726A001443E6 /* Rez */,
+				9C736B7A094C726A001443E6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "«PROJECTNAMEASIDENTIFIER»";
+			productInstallPath = "$(USER_LIBRARY_DIR)/Bundles";
+			productName = Blog;
+			productReference = 9C736B80094C726A001443E6 /* «PROJECTNAMEASIDENTIFIER».rwplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86EC46EC0681018500EF9A10 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "HelloWorld" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 86EC46E80681018500EF9A10;
+			productRefGroup = 86EC479A06811BCE00EF9A10 /* Products */;
+			projectDirPath = "";
+			targets = (
+				9C736B69094C726A001443E6 /* «PROJECTNAMEASIDENTIFIER» */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C736B6C094C726A001443E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C736B6D094C726A001443E6 /* «PROJECTNAMEASIDENTIFIER».nib in Resources */,
+				9C736B6F094C726A001443E6 /* plugin_icon.png in Resources */,
+				9C736B71094C726A001443E6 /* Localizable.strings in Resources */,
+				9C736B85094C7280001443E6 /* Info.plist in Resources */,
+				22B32AF90B55CA120048F8EE /* template.php in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		9C736B79094C726A001443E6 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22B32ABC0B55C69E0048F8EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/perl;
+			shellScript = "\nif (-e \"RWPluginUtilities.framework\") {\n\t# nothing to do since the framework already exists\n} else {\n\t# download and install it\n\texec `make -f GetRWPluginSDK.makefile install`;\n}";
+		};
+		9C736B7A094C726A001443E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# set\n\necho \"Removing the old plugin from the Application Support folder.\"\nrm -Rf ~/Library/Application\\ Support/RapidWeaver/${PRODUCT_NAME}.rwplugin\nif [ -d ~/Library/Application\\ Support/RapidWeaver/${PRODUCT_NAME}.rwplugin ]; then\n    echo \"Error: remove failed.\"\n    exit 1\nfi\n\necho \"Copying the plugin to the Application Support folder.\"\nif [ -d \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.rwplugin\" ]; then\n  cp -R \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.rwplugin\" ~/Library/Application\\ Support/RapidWeaver\n  echo \"installed to Applicaton support\"\nfi\n\nexit 0; ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C736B72094C726A001443E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C736B73094C726A001443E6 /* «PROJECTNAMEASIDENTIFIER»Plugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3771366E0917AC52009CB342 /* «PROJECTNAMEASIDENTIFIER».nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86EC478E06811B8300EF9A10 /* English */,
+			);
+			name = "«PROJECTNAMEASIDENTIFIER».nib";
+			sourceTree = "<group>";
+		};
+		3778116A0917CBE000E538D6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				377811660917CBDB00E538D6 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C72E61D088EEA07007CC3F7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "«PROJECTNAME»";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		9C72E61E088EEA07007CC3F7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				INFOPLIST_FILE = Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "«PROJECTNAME»";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		9C72E61F088EEA07007CC3F7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				INFOPLIST_FILE = Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "«PROJECTNAME»";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+		9C736B7C094C726A001443E6 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/RWPluginUtilities.framework/\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)\"";
+				OTHER_CFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "«PROJECTNAMEASIDENTIFIER»";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = rwplugin;
+			};
+			name = Development;
+		};
+		9C736B7D094C726A001443E6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/RWPluginUtilities.framework/\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)\"";
+				OTHER_CFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "«PROJECTNAMEASIDENTIFIER»";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = rwplugin;
+			};
+			name = Deployment;
+		};
+		9C736B7E094C726A001443E6 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/RWPluginUtilities.framework/\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)\"";
+				OTHER_CFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "«PROJECTNAMEASIDENTIFIER»";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = rwplugin;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "HelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C72E61D088EEA07007CC3F7 /* Development */,
+				9C72E61E088EEA07007CC3F7 /* Deployment */,
+				9C72E61F088EEA07007CC3F7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		9C736B7B094C726A001443E6 /* Build configuration list for PBXNativeTarget "«PROJECTNAMEASIDENTIFIER»" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C736B7C094C726A001443E6 /* Development */,
+				9C736B7D094C726A001443E6 /* Deployment */,
+				9C736B7E094C726A001443E6 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86EC46EC0681018500EF9A10 /* Project object */;
+}
